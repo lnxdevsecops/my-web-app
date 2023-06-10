@@ -1,0 +1,382 @@
+@media (min-width: 1205px) and (max-width: 1920px) {
+	body{
+		padding: 0px;
+		margin: 0px;
+		overflow-x: hidden;
+		font-family: Courier New Bold Italic;
+		
+	}
+	.container-fluid{
+		margin: 0px;
+		padding: 0px;
+	}
+	.navbar{
+		position: sticky;
+		top: 0;
+		background-color: #2e2e30;
+		overflow: hidden;
+		border-radius: 0px;
+		text-align: right;
+		border-bottom: 3px solid #c733e2;
+		z-index: 3;
+	}
+	.navbar ul a{
+		display: inline-block;
+		list-style-type: none;
+		text-decoration: none;
+		letter-spacing: 0.5px;
+		padding: 25px 20px;
+		font-size: 16px;
+		color: white;
+	}
+	.navbar ul a:hover{
+		text-decoration: none;
+		color: #cc0033;
+		transition: 0.2s;
+	}
+	#name{
+		float: left;
+		padding-top: 18px;
+		font-size: 25px;
+	}
+	#icon{
+		display: none;
+	}
+
+/*------------------navbar-end------------------------*/
+	
+/*-------------------landing_page---------------------*/
+	#img-bg{
+			height: 100vh;
+			width: 100%;
+			margin-top: -20px;
+			position: relative;
+			background-image: url('../images/moon.jpg');
+			background-attachment: scroll;
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+	.data{
+		text-align: center;
+		position: absolute;
+		color: white;
+		top: 20%;
+		right: 10%;
+	}
+	.data h1{
+		display: none;
+		color: white;
+    	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px white;
+	}
+	.data span{
+		color: #de21be;
+	}
+	.data p{
+		font-size: 18px;
+	}
+	#ext{
+		color: #3bdcdc;
+	}
+	#btn1 p{
+		margin-top: 20px;
+	}
+	#btn1 {
+		width: 200px;
+		height: 50px;
+		background-color: white;
+		padding: 12px 20px;
+		color: black;
+		transition: 0.3s
+		margin-top: 50px;
+	}
+	#btn1 span{
+		padding-left: 10px;
+	}
+	#btn1:hover{
+		background-color: #3bdcdc;
+		color: white
+	}
+	#btn1:hover [class *= "fa"]{
+		transform: rotateZ(90deg);
+		transition: 0.1s
+	}
+	#cont{
+		padding-top: 20px;
+	}
+	.datamove1, .datamove2{
+		position: relative;
+		opacity: 0px;
+		animation-name: cant;
+		animation-duration: 0.5s;
+		animation-fill-mode: both;
+		animation-delay: 1.5s;
+	}
+	@keyframes cant{
+		0%{left: -50px; visibility: hidden; opacity: 0;}
+		100% {left: 0%; visibility: visible; opacity: 1;}
+	}
+	.datamove2{
+		animation-name: button;
+		animation-delay: 2s;
+	}
+	@keyframes button{
+		0%{left: -50px; visibility: hidden; opacity: 0;}
+		100% {left: 25%; visibility: visible; opacity: 1;}
+	}
+/*--------------------landingpage end-----------------------*/
+
+
+/*----------------------About--------------------------------*/
+#section1{
+	padding-bottom: 100px;
+}
+#about{
+	text-align: center;
+	padding-top: 50px;
+	}
+#intr{
+	
+	margin-left: 100px;
+}
+#pfrst{
+	padding-top: 50px;
+	font-size: 18px;
+	letter-spacing: 0.5px;
+
+}
+#psnd{
+	padding-top: 30px;
+	font-size: 16px;
+	letter-spacing: 0.5px;
+	opacity: 0.8;
+}
+#cont p{
+	width: 100%;
+	height: 1px;
+	background-color: #555;
+	opacity: 0.5;
+	margin-top: 60px;
+}
+#cont th, td{
+	padding-left: 30px;
+	text-align: center;
+}
+#cont th{
+	font-size: 16px;
+	padding-top: 15px;
+	opacity: 0.9;
+}
+#cont td{
+	opacity: 0.8;
+	padding-top: 10px;
+}
+.my{
+	width:350px;
+	height:400px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#profile{
+	padding: 50px 100px;
+}
+
+/*----------about-end------------------------*/
+
+
+
+/*------------Education-----------------------------*/
+#section2{
+	padding-bottom: 100px;
+	height: 100vh;
+	background-image: url('../images/bg.jpg');
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+}
+#section2 h2{
+	text-align: center;
+	padding-top: 50px;
+}
+#cover{
+	margin-left: 100px;
+	padding-top: 100px;
+}
+#det{
+	
+}
+#det p{
+	width: 94%; 
+	height: 1px; 
+	background-color: white; 
+	position: absolute;
+	margin:-8px 0px 0px 16px;
+}
+.fa{
+	color:#c733e2;
+}
+/*------------education-end---------------------------*/
+
+/*----------------------skills-------------------------*/
+#section3{
+	padding-top: 50px;
+	padding-bottom: 100px;
+}
+#section3 h2{
+	position: relative;
+	text-align: center;
+}
+#tpbar{
+	padding-top: 50px;
+}
+#part1{
+	margin-left: 100px;
+}
+#part1 > div{
+	padding-top: 20px;
+}
+#part2 > div{
+	padding-top: 20px;
+}
+.outbar{
+	width: 100%;
+	height: 20px;
+	border-radius: 0px;
+	position: relative;
+	background-color: #d3d3d3;
+	display: inline-flex;
+}
+.inbar{
+	width: 10%;
+	height: 100%;
+	background-color: #c733e2;
+}
+.outbar p{
+	margin-left: 20px;
+}
+#part2{
+	margin-left: 30px;
+}
+/*----------------skills-end------------------------------------*/
+/*---------------------portfolio---------------------------------*/
+
+#pf{
+	padding-top: 50px;
+}
+#pf h2{
+	text-align: center;
+}
+#pfhd{
+	display: inline-flex;
+	padding-left: 25%;
+	padding-top: 30px;
+}
+#pfhd h4{
+	margin-left: 40px;
+	margin-bottom: 50px;
+	border: 1px solid white;
+	width: 120px;
+	height: 30px;
+	text-align: center;
+	padding-top: 5px;
+}
+#pfhd h4:hover{
+	background-color: #c733e2;
+	text-align: center;
+	color: white;
+}
+#inimg{
+	padding-left: 150px;
+	position: relative;
+	z-index: -10;
+}
+.filter{
+	padding-top: 4px;
+}
+/*
+div > img{
+	padding-top: 3px;
+	position: relative;
+	top: 50px;
+	left: 120px;
+}
+#inimg{
+	padding-left: 30px;
+	padding-right: 0px;
+}*/
+
+
+/*---------------portfolio-end---------------------------*/
+
+/*-----------------contact-form-------------------------------*/
+.cntform{
+	padding-top: 150px;
+}
+.cntform h2{
+	text-align: center;
+	padding-top: 100px;
+	padding-bottom: 100px;
+}
+.incntform{
+	width: 40%;
+	height: 650px;
+	border: 1px solid #d3d3d3;
+	background-color: white;
+	text-align: center;
+	position: absolute;
+	left: 29%;
+	z-index: 1;
+}
+form{
+	padding-top: 30px;
+}
+input, textarea, button{
+	border-radius: 0px;
+	background-color: white;
+	padding: 10px 20px;
+	width: 450px;
+	height: 50px;
+	border-color: #008789;
+	margin-top: 20px;
+}
+button{
+	margin-top: 50px;
+	background-color:  #cc0033;
+}
+button:hover{
+	color: white;
+}
+textarea{
+	height: 150px;
+}
+.fbbtm{
+	height: 450px;
+	background-color: #cc0033;
+	position: relative;
+	top: 400px;
+	z-index: -2;
+}
+#icons{
+	margin-top: 22%;
+    padding-left: 480px;
+    font-size: 40px;
+}
+#icons  a{
+	padding-left: 20px;
+}
+#icons a:hover{
+	color: white;
+	position: relative;
+}
+
+.over{
+	color: white;
+}
+#totop {
+	right: 5%;
+    font-size: 40px;
+    bottom: 10%;
+    position: fixed;
+   display: none;
+}
+}
+
