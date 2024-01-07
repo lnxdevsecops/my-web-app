@@ -22,7 +22,5 @@ spec:
         image: 43.204.38.51:8800/my-web-app:${BUILD_NUMBER}
         ports: 
         - containerPort: 80
-    imagePullSecrets: 
-    - name: k8s-private-repo-secret
-
-        
+      imagePullSecrets: 
+      - name: k8s-private-repo-secret
