@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment 
+metadata: 
+  name: my-web-app-dep
+spec: 
+  replicas: 1
+  strategy: 
+    type: RollingUpdate
+    maxSurge: 1
+    maxUnavailable: 1
+  selector: 
+    matchLabels: 
+      app: my-web-app
+  template: 
+    metadata: 
+      labels: 
+        app: my-web-app
+    spec: 
+      containers: 
+      - name: my-web-app
+        image: 43.204.38.51:8800/my-web-app:${BUILD_NUMBER}
+        ports: 
+        - containerPort: 80
