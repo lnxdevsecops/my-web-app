@@ -64,6 +64,6 @@ pipeline {
 
 def deployToKubernetes() {
     sh 'cat deployment.yml | envsubst | kubectl apply -f -'
-    sh 'kubectl apply -f service.yml'
+    sh 'cat service.yml | envsubst | kubectl apply -f -'
     sh 'kubectl get pods'
 }
